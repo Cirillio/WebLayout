@@ -6,52 +6,81 @@
     <link rel="stylesheet" href="output.css" />
     <title>Shoe Store: RUNWAY</title>
   </head>
-  <body class="bg-slate-800">
-    <header class="flex w-full bg-slate-100 h-20">
-      <div class="flex w-full">
-        <nav class="flex">
-          <ul class="flex flex-row w-full">
-            <li class="font-bold">Shop</li>
-            <li class="font-bold">About Us</li>
-            <li class="font-bold">Collection</li>
+  <body class="font-Bebas w-4/5 mx-auto bg-slate-100">
+    <header class="flex w-full flex-wrap bg-gradient-header">
+      <div
+        class="relative flex w-full h-20 items-center justify-between p-4 m-10 backdrop-blur-sm bg-white/30"
+      >
+        <nav class="flex ml-10">
+          <ul class="flex gap-16 text-gray-500">
+            <li class="">
+              <a class="text-2xl uppercase" href="">Shop</a>
+            </li>
+            <li class="">
+              <a class="text-2xl uppercase" href="">About Us</a>
+            </li>
+            <li class="">
+              <a class="text-2xl uppercase" href="">Collection</a>
+            </li>
           </ul>
         </nav>
-        <div>
-          <img src="/public/src/Vector 2.svg" alt="logovector" />
-          <span>RUNWAY</span>
+        <a
+          href="/dist/index.html"
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center mx-auto gap-2"
+        >
           <img src="/public/src/Vector 3.svg" alt="logovector" />
-        </div>
-        <div>
-          <img src="/public/src/Icon Search.svg" alt="search" />
-          <button>SIGN UP</button>
+          <span class="text-4xl font-bold uppercase">RUNWAY</span>
+          <img src="/public/src/Vector 2.svg" alt="logovector" />
+        </a>
+        <div class="flex gap-10">
+          <button>
+            <img src="/public/src/Icon Search.svg" alt="search" />
+          </button>
+          <button class="text-2xl uppercase bg-neolime px-7 py-2">
+            SIGN UP
+          </button>
         </div>
       </div>
-      <div>
-        <h1>Find Your Perfect Stride. / Run Beyond Limits.</h1>
-        <p>
+      <div class="flex flex-col gap-8 w-[45%] ml-24">
+        <h1 class="text-8xl leading-tight">
+          Find Your Perfect Stride. / Run Beyond Limits.
+        </h1>
+        <p class="leading-snug text-2xl w-4/5 text-gray-400 font-Poppins">
           Experience the difference quality running shoes can make. Whether
           you're a seasoned marathoner, a weekend jogger, or just starting out.
         </p>
-        <a href="">SHOP NOW</a>
+        <a
+          href="#"
+          class="flex items-center justify-center gap-5 p-3 bg-neolime w-fit"
+          ><span class="text-2xl">SHOP NOW</span
+          ><img src="/public/src/Icon Cart.svg" alt="cart_icon"
+        /></a>
       </div>
-      <div>
-        <div>
-          <div>
+      <div
+        class="flex flex-col items-center flex-1 mr-24 p-3 border border-slate-200"
+      >
+        <div class="flex overflow-hidden relative w-full h-full">
+          <div
+            id="header-slider"
+            class="flex transition-all border border-slate-200 w-full h-full absolute top-1/2 left-0 transform -translate-x-16 -translate-y-1/2"
+          >
             <img src="/public/sneakers/sneakers_main.png" alt="main_sneakers" />
+            <img src="/public/sneakers/sneakers_2.png" alt="main_sneakers" />
+            <img src="/public/sneakers/sneakers_3.png" alt="main_sneakers" />
           </div>
         </div>
-        <input type="radio" />
-        <input type="radio" />
-        <input type="radio" />
+        <div id="main_sneakers_toggles" class="flex gap-5">
+          <button
+            class="bg-red-500 header-color-toggles header-color-toggles-checked"
+          ></button>
+          <button class="bg-orange-500 header-color-toggles"></button>
+          <button class="bg-lime-500 header-color-toggles"></button>
+        </div>
       </div>
-      <div>
-        <il>
-          <li>PERFORMANCE</li>
-          <li>COMFORT</li>
-          <li>COMMUNITY</li>
-        </il>
+      <div class="flex w-full bg-neolime mt-20">
+        <span>PERFORMANCE • COMFORT • COMMUNITY •</span>
       </div>
     </header>
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>

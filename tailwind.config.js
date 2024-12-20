@@ -2,7 +2,10 @@
 module.exports = {
   content: ["./src/**/*.{html,js}", "./dist/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: { Bebas: ["Bebas Neue", "cursive"], Poppins: ["Poppins"] },
+      colors: { brown: "#6B6343", neolime: "#DDFD7F" },
+    },
   },
   plugins: [],
 };

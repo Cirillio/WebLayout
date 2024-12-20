@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .bg-gradient-header {
+    background: linear-gradient(90deg, #ffffff 66%, #6b6343 66%);
+  }
+}
+
+@layer components {
+  .header-color-toggles {
+    @apply w-6 h-6 rounded-full relative before:transition before:duration-150 before:w-8 before:h-8 before:p-4 before:border-2 before:border-neolime before:opacity-0 before:absolute before:top-1/2 before:left-1/2 before:rounded-full before:transform before:-translate-x-1/2 before:-translate-y-1/2;
+  }
+
+  .header-color-toggles-checked {
+    @apply before:opacity-100;
+  }
+}
