@@ -6,6 +6,16 @@
   .bg-gradient-header {
     background: linear-gradient(90deg, #ffffff 66%, #6b6343 66%);
   }
+
+  .header-slider-gradient {
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 1%,
+      black 99%,
+      transparent
+    );
+  }
 }
 
 @layer components {
@@ -15,5 +25,12 @@
 
   .header-color-toggles-checked {
     @apply before:opacity-100;
+  }
+
+  .header-slider-img {
+    @apply absolute object-cover object-center scale-125 top-0;
+  }
+  .header-slider-part {
+    @apply flex-none w-full relative hover:cursor-pointer;
   }
 }
